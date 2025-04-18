@@ -169,6 +169,7 @@ main {
 .hidden {
   display: none;
 }
+
 /* Rules Button */
 .btn--rules {
   top: 12rem;
