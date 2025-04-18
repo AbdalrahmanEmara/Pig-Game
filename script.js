@@ -105,3 +105,30 @@ btnHold.addEventListener('click', function () {
 
 // Reset the Game
 btnNew.addEventListener('click', init);
+
+// Add these at the top with other DOM selections
+const btnRules = document.querySelector('.btn--rules');
+const popupOverlay = document.querySelector('.popup-overlay');
+const closePopup = document.querySelector('.close-popup');
+
+// Add these event listeners at the bottom with others
+btnRules.addEventListener('click', function() {
+  popupOverlay.classList.add('active');
+});
+
+closePopup.addEventListener('click', function() {
+  popupOverlay.classList.remove('active');
+});
+
+popupOverlay.addEventListener('click', function(e) {
+  if (e.target === popupOverlay) {
+    popupOverlay.classList.remove('active');
+  }
+});
+
+// Show popup on page load
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    popupOverlay.classList.add('active');
+  }, 1000);
+});

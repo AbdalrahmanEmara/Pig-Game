@@ -31,6 +31,24 @@
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+    
+    <!-- Add this right before the script tag in your HTML -->
+    <button class="btn btn--rules">📜 Rules</button>
+
+    <div class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2 class="popup-title">Game Rules</h2>
+        <ol class="popup-rules">
+          <li>First to <strong>100 points</strong> wins!</li>
+          <li><strong>Player 1</strong> starts first</li>
+          <li>Roll dice as much as you want each turn</li>
+          <li>Each roll adds to your current score</li>
+          <li>Rolling a <strong>1</strong> loses your current score</li>
+          <li><strong>Hold</strong> to bank your points and pass the turn</li>
+        </ol>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
